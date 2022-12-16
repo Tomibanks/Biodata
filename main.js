@@ -2,6 +2,17 @@
 
 "use strict"
 
+//Navbar
+
+$(window).scroll(function(){
+if ($(this).scrollTop() > 200){
+  $('.navbar').fadeIn('slow').css('display', 'flex');
+}else {
+  $('.navbar').fadeOut('slow').css('display', 'none')
+}
+
+});
+
 //Typed Initiate
 if ($('.typed-text-output').lenght == 1){
   var typed_strings = $('.typed-text').text();
